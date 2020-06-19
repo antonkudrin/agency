@@ -1,0 +1,144 @@
+.footer {
+  position: relative;
+  background-color: $color_black;
+
+  .title {
+    color: #9f9f9f;
+    text-align: center;
+  }
+  * {
+    color: #fff;
+  }
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  > * {
+    margin-bottom: 30px;
+  }
+
+  i {
+    float: left;
+    margin: 20px 20px 0 0;
+  }
+
+  i::before {
+    font-size: 35px;
+  }
+  > *:nth-child(2) i::before {
+    font-size: 55px;
+  }
+  .footer__contact_wrap {
+    float: right;
+  }
+}
+.footer__email a {
+  font-size: 21px;
+  font-family: "Times New Roman";
+  line-height: 1.152;
+}
+
+.footer__office,
+.footer__phone {
+  font-size: 17px;
+  font-family: "OpenSans";
+  line-height: 1.412;
+}
+
+.footer__contact_link:hover {
+  color: darken($color_white, 20%);
+}
+
+.footer__social {
+  text-align: center;
+  * {
+    margin: 0 5px 10px;
+  }
+  i.fa {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  & a:hover {
+    .fa-facebook {
+      background-color: $facebook_color;
+    }
+    .fa-google-plus {
+      background-color: $google_color;
+    }
+    .fa-linkedin {
+      background-color: $in_color;
+    }
+    .fa-vk {
+      background-color: $vk_color;
+    }
+    .fa-youtube {
+      background-color: $youtube_color;
+    }
+    .fa-digg {
+      background-color: $facebook_color;
+    }
+    .fa-deviantart {
+      background-color: rgb(179, 34, 34);
+    }
+  }
+}
+hr {
+  width: 80%;
+  height: 2px;
+  opacity: 0.431;
+  background-color: rgb(255, 255, 255);
+  margin: 20px auto;
+}
+
+.footer__copyright {
+  font-size: 17px;
+  font-family: "Times New Roman";
+  color: rgb(255, 255, 255);
+  line-height: 1.412;
+  text-align: center;
+}
+
+.footer__triangle-red {
+  position: absolute;
+  right: -3vw;
+  bottom: 0;
+
+  border-bottom: 15vw solid $color_red;
+  border-right: 15vw solid transparent;
+  border-left: 15vw solid transparent;
+}
+
+@media (min-width: 1950px) {
+
+  .footer * {
+    font-size: xx-large;
+  }
+      .footer__contact i::before{
+        font-size: xxx-large;
+      }
+  
+  .footer__social i.fa {
+    font-size: xx-large;
+   
+    width: 60px;
+    height: 60px;
+
+}
+
+  .footer__email a {
+    font-size: xx-large;
+  }
+
+  .footer__contact {
+    justify-content: space-evenly;
+  }
+
+
+}

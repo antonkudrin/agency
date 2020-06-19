@@ -1,0 +1,165 @@
+@import "_fonts";
+
+@import "_color";
+@import "_nav";
+@import "_header";
+@import "_about";
+@import "_services";
+@import "_wework";
+@import "_team";
+@import "_client";
+@import "_footer";
+
+*:focus,
+*:checked,
+*:active {
+  outline: none !important;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  transition: all 0.3s ease;
+}
+a:hover {
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+main {
+  overflow: hidden;
+}
+
+footer,
+section {
+  padding: 6% 14%;
+}
+
+.button {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: thin;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+
+  z-index: 3;
+}
+
+.article__button {
+  color: $color_white;
+  background-color: $color_red;
+  box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+  transition: 0.3s;
+
+  &:hover {
+    color: darken($color_white, 20%);
+    background-color: lighten($color_red, 5%);
+  }
+  &:active {
+    transform: scale(0.9);
+    color: $color_white;
+    background-color: darken($color_red, 10%);
+  }
+}
+
+.title {
+  font-size: 44px;
+  font-family: "PeaceSans", "Arial", "Helvetica", sans-serif;
+  color: $color_title;
+  line-height: 1.2;
+}
+
+.article__subtitle {
+  margin-bottom: 15%;
+
+  font-size: 17px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  color: rgb(106, 106, 106);
+  line-height: 1.765;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-family: "OpenSans", sans-serif;
+  color: $color_subtitle;
+  line-height: 1.765;
+}
+
+.avatar {
+  display: inline-block;
+  border: 1vw solid $color_white;
+  background-color: rgb(231, 231, 230);
+  box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.22);
+
+  transform: rotate(45deg);
+  overflow: hidden;
+
+  img {
+    transform: rotate(-45deg) scale(1.6);
+    width: 100%;
+    transition: transform 0.4s ease-out;
+    &:hover {
+      transform: rotate(-45deg) scale(1.4);
+    }
+  }
+}
+
+@media (min-width: 1950px) {
+  .button {
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  .title {
+    font-size: 82px;
+  }
+  .subtitle {
+    font-size: 33px;
+  }
+  .do__icon::before {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1950px) {
+}
+
+@media (max-width: 1050px) {
+  section {
+    padding: 6%;
+  }
+}
+
+@media (max-width: 800px) {
+  footer,
+  section {
+    padding: 10% 6%;
+  }
+}
+
+@media (max-width: 450px) {
+  .button {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .title {
+    font-size: 32px;
+   
+  }
+}
+
+

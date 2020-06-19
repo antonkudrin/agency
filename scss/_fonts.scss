@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./../fonts/Times_New_Roman/times_new_roman.eot"); /* IE 9 Compatibility Mode */
+  src: url("./../fonts/Times_New_Roman/times_new_roman.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("./../fonts/Times_New_Roman/times_new_roman.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./../fonts/Times_New_Roman/times_new_roman.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./../fonts/Times_New_Roman/times_new_roman.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./../fonts/Times_New_Roman/times_new_roman.svg#times_new_roman")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./../fonts/OpenSans/opensans.woff2");
+  src: url("./../fonts/OpenSans/opensans.woff");
+}
+
+@font-face {
+  font-family: "OpenSansbold";
+  src: url("./../fonts/OpenSans/opensansbold.woff2");
+  src: url("./../fonts/OpenSans/opensansbold.woff");
+}
+
+@font-face {
+  font-family: "OpenSansitalic";
+  src: url("./../fonts/OpenSans/opensansitalic.woff2");
+  src: url("./../fonts/OpenSans/opensansitalic.woff");
+}
+
+@font-face {
+  font-family: "LemonMilkbold";
+  src: url('./../fonts/LEMONMILK/LEMONMILK-Bold.woff2');
+  src: url('./../fonts/LEMONMILK/LEMONMILK-Bold.woff');
+}
+
+@font-face {
+  font-family: "PeaceSans";
+  src: url("./../fonts/PeaceSans/PeaceSans.woff");
+  src: url("./../fonts/PeaceSans/Peace_Sans_Webfont.woff2");
+}

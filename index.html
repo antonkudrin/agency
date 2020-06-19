@@ -1,26 +1,673 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      lang="ru"
+      content="Работа на дому: Сверстать лендинг для хостела - верстальщик удаленно, сверстать сайт, сделать верстку"
+    />
+    <meta
+      name="keywords"
+      lang="ru"
+      content="фриланс, фрилансер, freelance, Верстка сайта по низкой цене на заказ. Найти верстальщика сайтов удаленно, верстальщик удаленно, сверстать сайт, сделать верстку, требуется верстальщик, сверстать страницу, ищу верстальщика"
+    />
+    <meta name="author" lang="ru" content="Кудрин Антон" />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-reboot/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/wow-animate.min.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <title>Git por1</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Best | PSD Template for freelancer and agencies</title>
   </head>
   <body>
-   
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-    </ul>
-    
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js" ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <main>
+      <nav class="nav">
+        <label for="targglemenu" class="targglemenu">
+          <i class="nav__icon fa fa-reorder" aria-hidden="true"></i>
+        </label>
+        <div class="nav__logo"><a href="#">Agency</a></div>
+        <div class="nav__bar">
+          <input
+            type="checkbox"
+            name="targglemenu"
+            id="targglemenu"
+            class="menu"
+          />
+          <ul class="nav__list">
+            <li>
+              <a href="#home" rel="home" class="nav__link">Home</a>
+            </li>
+            <li><a href="#about" rel="about" class="nav__link">About us</a></li>
+            <li><a href="#team" rel="team" class="nav__link">Team</a></li>
+            <li>
+              <a href="#services" rel="services" class="nav__link">Services</a>
+            </li>
+            <li>
+              <a href="#process" rel="process" class="nav__link">Process</a>
+            </li>
+            <li>
+              <a href="#client" rel="client" class="nav__link">Clientes</a>
+            </li>
+            <li><a href="#wework" rel="wework" class="nav__link">Work</a></li>
+            <label for="targglemenu" class="targglemenu">
+              <i class="nav__icon fa fa-times" aria-hidden="true"></i>
+            </label>
+          </ul>
+          <div class="nav__search">
+            <label for="targgleSearch">
+              <i class="nav__icon fa fa-search" aria-hidden="true"></i>
+            </label>
+            <input
+              type="checkbox"
+              name="targgleSearch"
+              id="targgleSearch"
+              class="targgle"
+            />
+            <form action="" method="get" class="form__search">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="search"
+                placeholder="Search"
+              />
+            </form>
+            <a href="#">
+              <i class="nav__icon fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <header class="header" id="home">
+        <div class="header__bg"></div>
+
+        <img class="img-header" src="./img/header/BG.jpg" alt="image" />
+        <img
+          class="men-bord-header"
+          src="./img/header/men.png"
+          alt="Men-bord"
+        />
+
+        <span
+          class="think-header__title wow animate__fadeIn"
+          data-wow-duration="1s"
+          data-wow-offset="200"
+          >Think</span
+        >
+        <span
+          class="outside-header__title wow animate__fadeIn"
+          data-wow-duration="2s"
+          >outside</span
+        >
+        <span
+          class="of-the-box-header__title wow animate__fadeIn"
+          data-wow-duration="3s"
+          >of the box</span
+        >
+
+        <button
+          type="submit"
+          class="header__button button wow animate__heartBeat"
+          data-wow-duration="1s"
+        >
+          Read more
+        </button>
+      </header>
+
+      <section class="about" id="about">
+        <aside class="about__triangle-black"></aside>
+        <article
+          class="about__item wow animate__fadeIn"
+          data-wow-duration="2s"
+          data-wow-offset="100"
+        >
+          <h2 class="about__title title">
+            Who we are
+          </h2>
+          <p class="article__subtitle subtitle">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+
+          <button
+            type="submit"
+            class="article__button button wow animate__heartBeat"
+            data-wow-duration="1s"
+            data-wow-offset="100"
+          >
+            Read more
+          </button>
+        </article>
+
+        <article
+          class="about__item wow animate__fadeInRight"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          <img
+            class="about__macbook"
+            src="./img/macbook/Macbook-pro.png"
+            alt="Macbook"
+          />
+          <div class="about__macbook-wrap-img">
+            <img
+              class="about__macbook-img"
+              src="./img/macbook/Layer-3.jpg"
+              alt="desktop"
+            />
+          </div>
+        </article>
+      </section>
+
+      <section class="services" id="services">
+        <aside class="services__triangle-red"></aside>
+        <h2
+          class="title wow animate__fadeInDown"
+          data-wow-duration="2s"
+          data-wow-offset="200"
+        >
+          What we do
+        </h2>
+        <div class="services__wrapper">
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="200"
+          >
+            <i class="services__icon fa fa-flag-o" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                Creative Work
+              </h3>
+              <p class="services__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <i class="services__icon fa fa-desktop" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                We do Best
+              </h3>
+              <p class="services__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <i class="services__icon fa fa-line-chart" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                Best Company
+              </h3>
+              <p class="services__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <i class="services__icon fa fa-headphones" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                Nice Idea
+              </h3>
+              <p class="services__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <i class="services__icon fa fa-map-o" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                Professional
+              </h3>
+              <p class="services__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="services__item wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <i class="services__icon fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="services__article">
+              <h3 class="services__title">
+                Great Services
+              </h3>
+              <p
+                class="services__subtitle subtitle wow animate__fadeIn"
+                data-wow-duration="2s"
+                data-wow-offset="100"
+              >
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wework" id="wework">
+        <aside class="wework__triangle-red"></aside>
+        <h2
+          class="title wow animate__fadeInDown"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          How we works
+        </h2>
+
+        <article class="wework__item">
+          <ol class="wework__list">
+            <div
+              class="wework__article wow animate__fadeIn"
+              data-wow-duration="2s"
+              data-wow-offset="100"
+            >
+              <p class="article__subtitle subtitle">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+
+              <button
+                type="submit"
+                class="article__button button wow animate__heartBeat"
+                data-wow-duration="1s"
+                data-wow-offset="100"
+              >
+                Read more
+              </button>
+            </div>
+
+            <div
+              class="wework__li_wrapper wow animate__fadeInRight"
+              data-wow-duration="1s"
+              data-wow-offset="100"
+            >
+              <li>
+                <div class="bg"></div>
+                <img src="./img/linear/idea.jpg" alt="image" />
+                <span>1.</span>
+                <h3>Idea</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </li>
+              <li>
+                <div class="bg"></div>
+                <img src="./img/linear/design.jpg" alt="image" />
+                <span>2.</span>
+                <h3>Design</h3>
+              </li>
+              <li>
+                <div class="bg"></div>
+                <img src="./img/linear/output.jpg" alt="image" />
+                <span>3.</span>
+                <h3>Output</h3>
+              </li>
+            </div>
+          </ol>
+        </article>
+        <div class="wework__triangle-black"></div>
+      </section>
+
+      <section class="team" id="team">
+        <h2
+          class="title wow animate__fadeInDown"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          Our creative team
+        </h2>
+
+        <!-- ! Картинки устанавливать только равномерного квадрата -->
+        <div
+          class="center slider wow animate__fadeIn"
+          data-wow-duration="2s"
+          data-wow-offset="100"
+        >
+          <div>
+            <div class="avatar">
+              <img src="./img/avatars/Jeison.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>Jimmy Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="avatar">
+              <img src="./img/avatars/gaga.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>John Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="avatar">
+              <img src="./img/avatars/ledi.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>Jimmy Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="avatar">
+              <img src="./img/avatars/sharf.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>John Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="avatar">
+              <img src="./img/avatars/Jeison.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>John Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="avatar">
+              <!-- <img src="http://placehold.it/300x300?text=6" /> -->
+              <img src="./img/avatars/ledi.jpg" />
+            </div>
+            <div class="avatar__title">
+              <h3 class="avatar__mane">
+                <span>Jimmy Doe</span>
+              </h3>
+              <h4 class="avatar__position">
+                <span>Designer</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="client" id="client">
+        <div class="client__triangle-red"></div>
+
+        <h2
+          class="title wow animate__fadeInDown"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          What client says
+        </h2>
+
+        <!-- ! Картинки устанавливать только равномерного квадрата -->
+        <aside class="client__item">
+          <div id="tabs" class="tabs">
+            <div class="client__comment" id="comment_1">
+              <div class="client__avatar avatar">
+                <img src="./img/avatars/sharf.jpg" />
+              </div>
+
+              <div class="client__review">
+                <p
+                  class="wow animate__fadeIn"
+                  data-wow-duration="2s"
+                  data-wow-offset="100"
+                >
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.Sed ut perspiciatis unde
+                  omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium.
+                </p>
+                <h3
+                  class="client__name wow animate__fadeIn"
+                  data-wow-duration="2s"
+                  data-wow-offset="100"
+                >
+                  Jinny Snow, Company CEO
+                </h3>
+              </div>
+            </div>
+
+            <div class="client__comment" id="comment_2">
+              <div class="client__avatar avatar">
+                <img src="./img/avatars/Jeison.jpg" />
+              </div>
+
+              <div class="client__review">
+                <p>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.Sed ut perspiciatis unde
+                  omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium.
+                </p>
+                <h3 class="client__name">
+                  John Doe, Company CEO
+                </h3>
+              </div>
+            </div>
+
+            <div class="client__comment" id="comment_3">
+              <div class="client__avatar avatar">
+                <img src="./img/avatars/ledi.jpg" />
+              </div>
+
+              <div class="client__review">
+                <p>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.Sed ut perspiciatis unde
+                  omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium. Sed ut perspiciatis unde omnis iste natus error
+                  sit voluptatem accusantium Sed ut perspiciatis unde omnis iste
+                  natus error sit voluptatem accusantium doloremque
+                  laudantium.Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium.
+                </p>
+                <h3 class="client__name">
+                  Jimmy Doe, Company CEO
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="client__avatars wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-offset="100"
+          >
+            <div class="client__miniavatar avatar" id="targgle_1">
+              <img src="./img/avatars/sharf.jpg" />
+            </div>
+            <div class="client__miniavatar avatar" id="targgle_2">
+              <img src="./img/avatars/Jeison.jpg" />
+            </div>
+            <div class="client__miniavatar avatar" id="targgle_3">
+              <img src="./img/avatars/ledi.jpg" />
+            </div>
+          </div>
+
+          <div class="client__triangle-black"></div>
+        </aside>
+      </section>
+
+      <footer class="footer" id="process">
+        <h2
+          class="title wow animate__fadeInDown"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          Get in touch
+        </h2>
+
+        <div
+          class="footer__contact wow animate__fadeInDown"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+        >
+          <div class="footer__email">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="footer__contact_wrap">
+              <h3>Email</h3>
+              <a class="footer__contact_link" href="mailto:free@psd.in.ua"
+                >free@psd.in.ua</a
+              ><br />
+              <a class="footer__contact_link" href="mailto:free@psd.in.ua"
+                >free@psd.in.ua</a
+              >
+            </div>
+          </div>
+
+          <div class="footer__phone">
+            <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+            <div class="footer__contact_wrap">
+              <h3>Phone</h3>
+              <a class="footer__contact_link" href="tel:+1234567890"
+                >+123 456 7890</a
+              ><br />
+              <a class="footer__contact_link" href="tel:+1234567890"
+                >+123 456 7890</a
+              >
+            </div>
+          </div>
+
+          <div class="footer__office">
+            <i class="fa fa-map-o" aria-hidden="true"></i>
+            <div class="footer__contact_wrap">
+              <h3>Office</h3>
+              <address>
+                123, Main Road, New City,<br />
+                My Country 123456
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer__social wow animate__fadeIn"
+          data-wow-duration="2s"
+          data-wow-offset="100"
+        >
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-digg" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-deviantart" aria-hidden="true"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__copyright wow animate__fadeIn" data-wow-duration="2s">
+          Кудрин Антон © 2020. PSD.IN.UA | Best PSD Template for freelancer and
+          agencies
+        </p>
+        <div class="footer__triangle-red"></div>
+      </footer>
+    </main>
+
+    <script src="./js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script
+      src="./slick/slick.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./js/wow.min.js" type="text/javascript"></script>
+    <script
+      src="./js/jquery.malihu.PageScroll2id.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>

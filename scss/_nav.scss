@@ -1,0 +1,229 @@
+// $facebook_color: #3b5998;
+// $vk_color: #4c75a3;
+// $google_color:#db4a39;
+// $in_color:#db4a39;
+// $youtube_color:#c4302b;
+
+$color_nav_link: #ffffff;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  width: 100%;
+
+  padding: 2% 5%;
+  z-index: 10;
+  transition:all 0.3s ease-in;
+  &:hover{
+    background-color: $color_red;
+  }
+}
+.targglemenu {
+  display: none;
+}
+input.menu {
+  display: none;
+}
+
+.nav__logo {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  a {
+    color: $color_nav_link;
+    &:hover {
+      color: darken($color_nav_link, 20%);
+    }
+  }
+}
+
+.nav__bar {
+  width: 50%;
+  align-self: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+  width: 87%;
+}
+
+.nav__link {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: $color_nav_link;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1.2;
+
+  &:hover {
+    color: darken($color_nav_link, 20%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    overflow: hidden;
+    width: 0;
+    height: 3px;
+    background-color: darken($color_nav_link, 20%);
+    transition: all 0.4s;
+  }
+
+  &.mPS2id-highlight-first::before {
+    width: 100%;
+    }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.nav__search {
+  position: relative;
+  float: right;
+}
+
+.nav__icon {
+  &:last-child {
+    margin-left: 15px;
+  }
+
+  &::before {
+    font-size: 18px;
+    color: $color_nav_link;
+    line-height: 1.2;
+    text-align: center;
+    transition: 0.3s;
+  }
+  &:hover::before {
+    color: darken($color_nav_link, 20%);
+    cursor: pointer;
+  }
+  &.fa-facebook:hover::before {
+    color: $facebook_color;
+  }
+}
+
+input.targgle {
+  display: none;
+  &:checked ~ .form__search {
+    max-height: 200px;
+    transition: all 1s;
+    opacity: 1;
+  }
+}
+
+.form__search {
+  position: absolute;
+  top: auto;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.search {
+  color: $color_red;
+  border: none;
+  border-radius: 3px;
+  text-indent: 10px;
+}
+
+@media (min-width: 1950px) {
+  .nav__logo {
+    font-size: 88px;
+  }
+  .nav__bar {
+    width: 60%;
+  }
+  .nav__link {
+    font-size: 28px;
+  }
+  .nav__icon::before {
+    font-size: 32px;
+  }
+  .nav__icon:last-child {
+    margin-left: 30px;
+}
+}
+
+@media only screen and (max-width: 1075px) {
+  .nav .nav__bar {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .nav .targglemenu {
+    display: block;
+    padding-top: 14px;
+    .fa-times {
+      margin: 0;
+    }
+  }
+  input.menu:checked ~ ul.nav__list {
+    max-width: 100%;
+    opacity: 1;
+  }
+
+  .nav .nav__bar {
+    width: 65px;
+    .nav__list {
+      text-align: center;
+      display: block;
+
+      position: absolute;
+      top: 55px;
+      left: 0;
+      padding-top: 20px;
+
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cc0000+0,cc0000+100&0+37,1+100 */
+      background: -moz-linear-gradient(
+        top,
+        rgba(204, 0, 0, 0) 0%,
+        rgba(204, 0, 0, 0.5) 37%,
+        rgba(204, 0, 0, 1) 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        rgba(204, 0, 0, 0) 0%,
+        rgba(204, 0, 0, 0.5) 37%,
+        rgba(204, 0, 0, 1) 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        rgba(204, 0, 0, 0) 0%,
+        rgba(204, 0, 0, 0.5) 37%,
+        rgba(204, 0, 0, 1) 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cc0000', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */
+
+      transition: all 1s;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media(max-width:450px){
+  .nav__logo {
+    font-size: 32px;}
+}
